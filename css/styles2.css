@@ -1,0 +1,161 @@
+html {
+  font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+html, body, ul, ol, li, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.type-wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.type-wrapper #type {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+  transition: all 0.6s ease-in-out;
+}
+.type-wrapper #type:hover {
+  background-position: 10%;
+  transition: all 0.6s ease-in-out;
+}
+.type-wrapper #type:hover p, .type-wrapper #type.h1 {
+  margin-bottom: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.type-wrapper #type .type-container {
+  padding: 50px;
+  width: 100%;
+  opacity: 0.9;
+  box-sizing: border-box;
+  position: relative;
+}
+.type-wrapper #type .type-container:after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.type-wrapper #type .type-container h1 {
+  font-size: 3.8rem;
+  font-weight: bold;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+.type-wrapper #type .type-container p {
+  font-size: 1.145rem;
+  line-height: 2.1rem;
+  transition: all 0.5s ease-in-out;
+  padding: 20px 0;
+  color: #000000;
+}
+.type-wrapper #type .type-container .more {
+  color: white;
+  display: inline-block;
+  padding: 0 11px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.type-wrapper #type .type-container span {
+  font-size: 1.375rem;
+  opacity: 0;
+  margin-left: 10px;
+  color: white;
+  transition: all 0.6s ease-in-out;
+}
+.type-wrapper #type:hover .more {
+  background: white;
+  color: #1a1a1a;
+}
+.type-wrapper #type:hover span {
+  opacity: 1;
+  transition: all 0.6s ease-in-out;
+}
+.type-wrapper .type1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/type11.jpg");
+}
+.type-wrapper .type1 .type-container {
+  background: #e39d23;
+}
+.type-wrapper .type1 .type-container:after {
+  transform-origin: top left;
+  transform: skewY(-4deg);
+}
+.type-wrapper .type2 {
+  box-shadow: inset 0 0 4px #010101;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/type2.jpg");
+}
+.type-wrapper .type2 .type-container {
+  background: #5B85AA;
+}
+.type-wrapper .type2 .type-container:after {
+  transform-origin: top right;
+  transform: skewY(4deg);
+}
+.type-wrapper .type3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url("../images/type3.jpg");
+}
+.type-wrapper .type3 .type-container {
+  background: #F46036;
+}
+.type-wrapper .type3 .type-container:after {
+  transform-origin: top left;
+  transform: skewY(-4deg);
+}
+
+/*# sourceMappingURL=styles2.css.map */

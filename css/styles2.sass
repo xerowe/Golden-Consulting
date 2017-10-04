@@ -1,0 +1,90 @@
+@import "reset"
+
+.type-wrapper
+  display: flex
+  justify-content: center
+  overflow: hidden
+  #type
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    background-size: cover
+    cursor: pointer
+    z-index: 1
+    transition: all 0.6s ease-in-out
+    &:hover
+      background-position: 10%
+      transition: all 0.6s ease-in-out
+    &:hover p, &.h1
+      margin-bottom: 40px
+      transition: all 0.5s ease-in-out
+    .type-container
+      padding: 50px
+      width: 100%
+      opacity: 0.9
+      box-sizing: border-box
+      position: relative
+      &:after
+        position: absolute
+        width: 100%
+        height: 100%
+        content: ''
+        background: inherit
+        z-index: -1
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+      h1
+        font-size: 3.8rem
+        font-weight: bold
+        color: white
+        transition: all 0.5s ease-in-out
+      p
+        font-size: 1.145rem
+        line-height: 2.1rem
+        transition: all 0.5s ease-in-out
+        padding: 20px 0
+        color: #000000
+      .more
+        color: white
+        display: inline-block
+        padding: 0 11px
+        border-radius: 50%
+        border: 2px solid white
+      span
+        font-size: 1.375rem
+        opacity: 0
+        margin-left: 10px
+        color: white
+        transition: all 0.6s ease-in-out
+    &:hover .more
+      background: white
+      color: #1a1a1a
+    &:hover span
+      opacity: 1
+      transition: all 0.6s ease-in-out
+  .type1
+    background: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url('../images/type11.jpg')
+    .type-container
+      background: #e39d23
+      &:after
+        transform-origin: top left
+        transform: skewY(-4deg)
+  .type2
+    box-shadow: inset 0 0 4px #010101
+    background: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url('../images/type2.jpg')
+    .type-container
+      background: #5B85AA
+      &:after
+        transform-origin: top right
+        transform: skewY(4deg)
+  .type3
+    background: linear-gradient(rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0.15)), url('../images/type3.jpg')
+    .type-container
+      background: #F46036
+      &:after
+        transform-origin: top left
+        transform: skewY(-4deg)
